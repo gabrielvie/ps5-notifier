@@ -14,7 +14,7 @@ class Scrapper:
     notifier: Notifier
 
     def __init__(self, notifier: Notifier):
-        """Inits Scrapper class.
+        """Initializes Scrapper class.
 
         Args:
             notifier (Notifier): receive a notifier instance.
