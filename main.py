@@ -3,12 +3,6 @@ import colored
 
 from ps5_notifier import Notifier, Scrapper
 
-
-def loop(stopped, scrapper):
-    while not stopped.wait(60.0):
-        scrapper.proccess()
-
-
 if __name__ == "__main__":
     notifier = Notifier()
     scrapper = Scrapper(notifier=notifier)
@@ -20,4 +14,6 @@ if __name__ == "__main__":
             scrapper.process()
         except Exception as exception:
             print(exception.__str__)
+
+        # TODO: provide this value with cli argument
         time.sleep(300)

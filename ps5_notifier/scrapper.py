@@ -8,6 +8,7 @@ from .notifier import Notifier
 class Scrapper:
 
     # url: str = "https://www.amazon.com.br/PlayStation-3006297-Demons-Souls-5/dp/B08QTLJDD2"
+    # TODO: provide this value with cli argument
     url: str = "https://www.amazon.com.br/PlayStation-Console-PlayStation®5/dp/B088GNRX3J"
 
     soup: BeautifulSoup
